@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data value types in JS</title>
+</head>
+<body>
+    <script>
+        // primitive:single value(immutable)
+        // string/Number/Boolean/Null/Undefined/Symbol/BigInt
+
+        let name="Abhay";
+        console.log(name);
+        console.log(typeof(name));
+        let age=23;
+        let ismarried=false;
+        let address=null;
+        let education;
+        console.log(ismarried);
+        console.log(typeof(ismarried));
+
+        //BigInt
+        let salary=BigInt(34567899021905437);
+        console.log(salary);
+
+        //symbol
+        let name1=Symbol("vikas");
+        let name2=Symbol("vikas");
+        console.log(name1=name2);
+
+        //Non- primitive/reference/object-mutable
+        //Array/object/function
+        // object is collection of key value pair
+
+        let student={
+            name:"Abhay",
+            age:22,
+            ismarried: true,
+            address:{
+                streetNo:23,
+                area:"Indirapuram",
+                pincode:205678,
+                city:"GZB"
+            },
+            course:"B.Tech",
+            branch:"CSE",
+            year:2026,
+            getinfo:functio(){
+                return "My education is"+ student.course+" "+student.branch+"and year is"+student.year;
+
+            }
+        };
+        console.log(student);
+        
+
+        
+    </script>
+    
+</body>
+</html>
